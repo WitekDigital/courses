@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI & Data Courses | Deep Learning & SQL</title>
+  <script src="https://js.stripe.com/v3/"></script>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f8f9fa; }
+    header { background: #111827; color: white; padding: 20px; text-align: center; }
+    section { padding: 40px; max-width: 1000px; margin: auto; }
+    .card { background: white; padding: 25px; border-radius: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.08); margin-bottom: 25px; }
+    button { background: #2563eb; color: white; border: none; padding: 12px 18px; border-radius: 6px; cursor: pointer; font-size: 16px; }
+    button:hover { background: #1d4ed8; }
+    footer { background: #111827; color: #9ca3af; text-align: center; padding: 15px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Deep Learning & SQL Courses</h1>
+  <p>Learn industry-ready AI & Data skills</p>
+</header>
+
+<section>
+  <div class="card">
+    <h2>Deep Learning Course</h2>
+    <p>Neural Networks, CNNs, RNNs, Optimization, TensorFlow & Keras.</p>
+    <p><strong>Price:</strong> £199</p>
+    <button onclick="pay('dl')">Enroll Now</button>
+  </div>
+
+  <div class="card">
+    <h2>SQL for Data Engineering</h2>
+    <p>SQL fundamentals, joins, window functions, performance tuning.</p>
+    <p><strong>Price:</strong> £99</p>
+    <button onclick="pay('sql')">Enroll Now</button>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Akshay Chauhan | Online Training</p>
+</footer>
+
+<script>
+function pay(course) {
+  const priceMap = {
+    dl: "price_1Sh5kC6A27QpyxAOw3sBeowK",
+    sql: "price_1Sh5kb6A27QpyxAOFy4roeWf"
+  };
+
+  fetch("https://stripe-atkw.onrender.com/create-checkout-session", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ priceId: priceMap[course] })
+  })
+  .then(res => res.json())
+  .then(data => {
+    if (data.url) {
+      window.location.href = data.url;
+    } else {
+      alert("No checkout URL returned");
+    }
+  })
+  .catch(err => {
+    console.error(err);
+    alert("Error connecting to Stripe backend");
+  });
+}
+</script>
+
+
+
+</body>
+</html>
