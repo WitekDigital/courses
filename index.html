@@ -45,11 +45,11 @@
 <script>
 function pay(course) {
   const priceMap = {
-    dl: "price_1Sh5kC6A27QpyxAOw3sBeowK",
-    sql: "price_1Sh5kb6A27QpyxAOFy4roeWf"
+    dl: "price_1Sh7hi91vgeyIzAO2BS8bqsz",
+    sql: "price_1Sh7i791vgeyIzAOzwn2qT0G"
   };
 
-  fetch("https://stripe-atkw.onrender.com/create-checkout-session", {
+  fetch("https://course.akshaychauhan-jss.workers.dev", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ priceId: priceMap[course] })
