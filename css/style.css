@@ -250,25 +250,47 @@ footer {
     height: 150px;
   }
   /* ===== PROMO FLYING BANNER ===== */
-/* ===== PROMO FLYING BANNER (LEFT TO RIGHT) ===== */
+/* ===============================
+   PROMO FLYING BANNER (PREMIUM)
+================================ */
+
 .promo-banner {
+  position: sticky;
+  top: 70px; /* stays below header */
+  z-index: 999;
   width: 100%;
   background: linear-gradient(90deg, #635bff, #4b44d6);
   overflow: hidden;
   padding: 8px 0;
 }
 
+/* animation track */
 .promo-track {
+  display: flex;
+  width: max-content;
+  animation: slide-right 22s linear infinite;
+}
+
+/* pause on hover */
+.promo-banner:hover .promo-track {
+  animation-play-state: paused;
+}
+
+/* text styling */
+.promo-track span {
   white-space: nowrap;
-  display: inline-block;
-  padding-right: 100%;
-  animation: slide-right 18s linear infinite;
+  padding-right: 80px;
   font-size: 14px;
   color: #ffffff;
 }
 
 .promo-track strong {
   font-weight: 700;
+}
+
+.promo-track em {
+  font-style: normal;
+  opacity: 0.9;
 }
 
 .promo-track .coupon {
@@ -280,16 +302,27 @@ footer {
   margin: 0 4px;
 }
 
+/* animation */
 @keyframes slide-right {
   from {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
   to {
-    transform: translateX(100%);
+    transform: translateX(0%);
+  }
+}
+
+/* mobile optimization */
+@media (max-width: 768px) {
+  .promo-track span {
+    font-size: 13px;
+    padding-right: 60px;
   }
 }
 
 
+
 }
+
 
 
