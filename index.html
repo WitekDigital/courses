@@ -2,86 +2,265 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Professional Courses | Deep Learning, SQL, Python, Tableau, Kafka, dbt</title>
+  <title>Wited Digital Opc Pvt Ltd | Professional Courses</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <style>
-    body { font-family: Arial, sans-serif; margin:0; background:#f5f7fa; color:#333; line-height:1.6; }
-    header { background:linear-gradient(135deg,#0f172a,#1e293b); color:white; padding:60px 20px; text-align:center; }
-    header h1{font-size:34px;margin-bottom:10px;}
-    header p{font-size:18px;opacity:0.9;}
-    section{padding:50px 20px; max-width:1100px; margin:auto;}
-    h2{color:#111827;margin-bottom:25px;}
-    .courses {display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:25px;}
-    .card {background:white;padding:25px;border-radius:10px;box-shadow:0 4px 15px rgba(0,0,0,0.1);}
-    .card h3{color:#0a2540;}
-    ul{padding-left:20px;}
-    .price{font-size:22px;font-weight:bold;margin-top:10px;}
-    .btn{display:inline-block;background:#10b981;color:white;padding:12px 18px;text-decoration:none;border-radius:5px;font-weight:bold;margin-top:10px;}
-    .btn.secondary{background:#e5e7eb;color:#111827;margin-right:5px;}
-    .btn:hover{opacity:0.9;}
-    footer{background:#111827;color:white;text-align:center;padding:25px;margin-top:40px;font-size:14px;}
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #0a2540;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .courses {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+      flex: 1;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #0a2540;
+    }
+
+    .card ul {
+      padding-left: 20px;
+      margin: 10px 0;
+    }
+
+    .price {
+      font-size: 22px;
+      font-weight: bold;
+      margin-top: 10px;
+      color: #0a2540;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #635bff;
+      color: white;
+      padding: 12px 18px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      margin-top: 15px;
+      text-align: center;
+    }
+
+    .btn:hover {
+      background: #4b44d6;
+    }
+
+    .btn.secondary {
+      background: #e0e0e0;
+      color: #0a2540;
+      margin-right: 10px;
+    }
+
+    .btn.secondary:hover {
+      background: #d0d0d0;
+    }
+
+    footer {
+      background: #0a2540;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: underline;
+      margin: 0 5px;
+    }
   </style>
 </head>
+
 <body>
 
 <header>
-  <h1>Industry-Ready Professional Courses</h1>
-  <p>Hands-on learning | Certification | Real-world projects</p>
+  <h1>Wited Digital Opc Pvt Ltd</h1>
+  <p>Industry-Ready Professional Courses | Hands-on Learning | Certification</p>
 </header>
 
 <section>
-  <h2>Our Courses</h2>
+  <h2 style="text-align:center;">Our Courses</h2>
+
   <div class="courses">
-
+    <!-- Deep Learning Course -->
     <div class="card">
-      <h3>Deep Learning Certification</h3>
-      <p class="price">£499</p>
-      <a href="deep-learning.html" class="btn secondary">View Details</a>
-      <a href="https://buy.stripe.com/test_7sY00d9XeaoZbyecUognK01" class="btn">Enroll Now</a>
+      <img src="https://images.unsplash.com/photo-1581093588401-6f38e18d6a2e?auto=format&fit=crop&w=800&q=80" alt="Deep Learning">
+      <div class="card-content">
+        <h3>Deep Learning Certification</h3>
+        <ul>
+          <li>Neural Networks & Perceptron</li>
+          <li>Deep Neural Networks</li>
+          <li>TensorFlow & Keras</li>
+          <li>PyTorch</li>
+          <li>Optimization (SGD, Adam, RMSProp)</li>
+          <li>Convolutional Neural Networks</li>
+          <li>Transfer Learning & BERT</li>
+          <li>Object Detection (YOLO)</li>
+          <li>RNN, LSTM, GRU</li>
+          <li>Autoencoders & Capstone Projects</li>
+        </ul>
+        <p class="price">£499</p>
+        <a href="deep-learning.html" class="btn secondary">View Details</a>
+        <a href="https://buy.stripe.com/test_7sY00d9XeaoZbyecUognK01" class="btn">Enroll Now</a>
+      </div>
     </div>
 
+    <!-- SQL Course -->
     <div class="card">
-      <h3>SQL for Data Engineering</h3>
-      <p class="price">£199</p>
-      <a href="sql-course.html" class="btn secondary">View Details</a>
-      <a href="https://buy.stripe.com/test_8x24gtedu0Op59QdYsgnK00" class="btn">Enroll Now</a>
+      <img src="https://images.unsplash.com/photo-1555949963-aa79dcee9812?auto=format&fit=crop&w=800&q=80" alt="SQL Course">
+      <div class="card-content">
+        <h3>SQL for Data Engineering</h3>
+        <ul>
+          <li>SQL Fundamentals & Aggregations</li>
+          <li>Joins & Subqueries</li>
+          <li>Window Functions & Indexing</li>
+          <li>Query Optimization</li>
+          <li>Stored Procedures & Views</li>
+          <li>SQL for ETL & Data Warehousing</li>
+          <li>Hands-on Projects</li>
+        </ul>
+        <p class="price">£199</p>
+        <a href="sql.html" class="btn secondary">View Details</a>
+        <a href="https://buy.stripe.com/test_8x24gtedu0Op59QdYsgnK00" class="btn">Enroll Now</a>
+      </div>
     </div>
 
+    <!-- Python Course -->
     <div class="card">
-      <h3>Python for Data & AI</h3>
-      <p class="price">£299</p>
-      <a href="python-course.html" class="btn secondary">View Details</a>
-      <a href="https://buy.stripe.com/test_python" class="btn">Enroll Now</a>
+      <img src="https://images.unsplash.com/photo-1581091215360-36a1a1b177d4?auto=format&fit=crop&w=800&q=80" alt="Python Course">
+      <div class="card-content">
+        <h3>Python for Data & AI</h3>
+        <ul>
+          <li>Python Programming & Data Structures</li>
+          <li>Pandas, Numpy & Matplotlib</li>
+          <li>Data Analysis & Visualization</li>
+          <li>AI/ML Projects & Hands-on Coding</li>
+        </ul>
+        <p class="price">£299</p>
+        <a href="python.html" class="btn secondary">View Details</a>
+        <a href="https://buy.stripe.com/test_python" class="btn">Enroll Now</a>
+      </div>
     </div>
 
+    <!-- Tableau / Power BI -->
     <div class="card">
-      <h3>Tableau / Power BI</h3>
-      <p class="price">£249</p>
-      <a href="tableau-powerbi.html" class="btn secondary">View Details</a>
-      <a href="https://buy.stripe.com/test_tableau" class="btn">Enroll Now</a>
+      <img src="https://images.unsplash.com/photo-1603398938378-073e4e80c569?auto=format&fit=crop&w=800&q=80" alt="Tableau / Power BI">
+      <div class="card-content">
+        <h3>Tableau / Power BI</h3>
+        <ul>
+          <li>Data Visualization with Tableau & Power BI</li>
+          <li>Dashboard Design & Analytics</li>
+          <li>Real-world Projects & Reporting</li>
+        </ul>
+        <p class="price">£249</p>
+        <a href="tableau-powerbi.html" class="btn secondary">View Details</a>
+        <a href="https://buy.stripe.com/test_tableau" class="btn">Enroll Now</a>
+      </div>
     </div>
 
+    <!-- Kafka & Streaming -->
     <div class="card">
-      <h3>Kafka & Streaming</h3>
-      <p class="price">£299</p>
-      <a href="kafka-streaming.html" class="btn secondary">View Details</a>
-      <a href="https://buy.stripe.com/test_kafka" class="btn">Enroll Now</a>
+      <img src="https://images.unsplash.com/photo-1599577182070-cf4647e5826f?auto=format&fit=crop&w=800&q=80" alt="Kafka & Streaming">
+      <div class="card-content">
+        <h3>Kafka & Streaming</h3>
+        <ul>
+          <li>Apache Kafka Architecture</li>
+          <li>Real-time Streaming & Event-driven Systems</li>
+          <li>Hands-on Projects</li>
+        </ul>
+        <p class="price">£299</p>
+        <a href="kafka-streaming.html" class="btn secondary">View Details</a>
+        <a href="https://buy.stripe.com/test_kafka" class="btn">Enroll Now</a>
+      </div>
     </div>
 
+    <!-- dbt & Modern Data Stack -->
     <div class="card">
-      <h3>dbt & Modern Data Stack</h3>
-      <p class="price">£249</p>
-      <a href="dbt-modern-data-stack.html" class="btn secondary">View Details</a>
-      <a href="https://buy.stripe.com/test_dbt" class="btn">Enroll Now</a>
+      <img src="https://images.unsplash.com/photo-1612831662613-0b314c80ff53?auto=format&fit=crop&w=800&q=80" alt="dbt & Modern Data Stack">
+      <div class="card-content">
+        <h3>dbt & Modern Data Stack</h3>
+        <ul>
+          <li>dbt Workflow & Analytics Engineering</li>
+          <li>ETL Pipelines & Transformation</li>
+          <li>Modern Data Stack Tools & Projects</li>
+        </ul>
+        <p class="price">£249</p>
+        <a href="dbt-modern-data-stack.html" class="btn secondary">View Details</a>
+        <a href="https://buy.stripe.com/test_dbt" class="btn">Enroll Now</a>
+      </div>
     </div>
 
-  </div>
-
-  <div style="margin-top:50px;text-align:center;">
-    <a href="faq.html" class="btn">Frequently Asked Questions</a>
   </div>
 </section>
 
-<footer>© 2025 Akshay Chauhan | All Rights Reserved</footer>
+<section id="enroll">
+  <h2 style="text-align:center;">Enquiry / Enrollment Form</h2>
+  <p style="text-align:center;">Not ready to pay yet? Submit your details and we’ll contact you.</p>
+
+  <!-- Google Form Embed -->
+  <div style="max-width: 700px; margin:auto;">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfSTNFptCwgcSZ_AhWEJrApfIUed09Yj5pkia24hwBkU4dAAQ/viewform?embedded=true" width="100%" height="1055" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  </div>
+</section>
+
+<footer>
+  © 2025 Wited Digital Opc Pvt Ltd | <a href="faq.html">FAQ</a> | <a href="index.html">Home</a>
+</footer>
+
 </body>
 </html>
