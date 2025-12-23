@@ -1,270 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Wited Digital OPC Pvt Ltd | Professional Courses</title>
-
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      margin: 0;
-      background: #f5f7fa;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    header {
-      background: #0a2540;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      margin-bottom: 10px;
-      font-size: 2.2rem;
-    }
-
-    header p {
-      font-size: 1.2rem;
-    }
-
-    /* Hero Section */
-    .hero {
-      background: url('images/hero-bg.jpg') no-repeat center center/cover;
-      color: white;
-      text-align: center;
-      padding: 80px 20px;
-    }
-
-    .hero h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      margin-bottom: 30px;
-    }
-
-    .hero .btn {
-      background: #635bff;
-      color: white;
-      padding: 15px 25px;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
-      font-size: 1.1rem;
-    }
-
-    .hero .btn:hover {
-      background: #4b44d6;
-    }
-
-    section {
-      padding: 60px 20px;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .courses {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 25px;
-    }
-
-    .card {
-      background: white;
-      border-radius: 8px;
-      padding: 20px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-      transition: transform 0.2s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    .card img {
-      width: 100%;
-      border-radius: 6px;
-      margin-bottom: 15px;
-    }
-
-    .card h3 {
-      color: #0a2540;
-      margin-bottom: 10px;
-    }
-
-    .card ul {
-      padding-left: 20px;
-    }
-
-    .btn {
-      display: inline-block;
-      background: #635bff;
-      color: white;
-      padding: 12px 18px;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-      margin-top: 15px;
-    }
-
-    .btn:hover {
-      background: #4b44d6;
-    }
-
-    .price {
-      font-size: 22px;
-      font-weight: bold;
-      margin-top: 10px;
-    }
-
-    iframe {
-      width: 100%;
-      border: none;
-    }
-
-    footer {
-      background: #0a2540;
-      color: white;
-      text-align: center;
-      padding: 25px;
-      margin-top: 40px;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <title>Witek Digital OPC Pvt Ltd | Professional Courses</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
 <header>
-  <h1>Wited Digital OPC Pvt Ltd</h1>
-  <p>Learn from Industry Experts | Hands-on Projects | Certifications</p>
+  <h1>Witek Digital OPC Pvt Ltd</h1>
 </header>
 
 <!-- Hero Section -->
 <section class="hero">
   <h2>Learn from Industry Leaders & PhDs from Premier Institutes</h2>
   <p>Special discounts for students. Bundle packages for corporate training. Real-world curriculum.</p>
-  <a href="#enroll" class="btn">Enroll / Enquire Now</a>
+  <a href="#courses" class="btn">Explore Courses</a>
 </section>
 
 <!-- Courses Section -->
-<section>
-  <h2 style="text-align:center; margin-bottom:40px;">Our Courses</h2>
+<section id="courses">
+  <h2>Our Courses</h2>
   <div class="courses">
 
     <!-- Deep Learning -->
     <div class="card">
       <img src="images/deeplearning.jpg" alt="Deep Learning">
-      <h3>Deep Learning</h3>
+      <h3>Deep Learning Certification Program</h3>
+      <p><b>Duration:</b> 10 Weeks</p>
       <ul>
-        <li>Neural Networks, CNN, RNN</li>
+        <li>Neural Networks & Perceptron</li>
+        <li>Deep Neural Networks</li>
         <li>TensorFlow & Keras</li>
         <li>PyTorch</li>
         <li>Model Optimization (SGD, Adam, RMSProp)</li>
-        <li>Transformers & BERT</li>
+        <li>CNN, RNN, LSTM, GRU</li>
+        <li>Transfer Learning & BERT</li>
+        <li>Autoencoders & Capstone Projects</li>
       </ul>
       <p class="price">£499</p>
-      <a href="deep-learning.html" class="btn">View Course</a>
       <a href="https://buy.stripe.com/test_7sY00d9XeaoZbyecUognK01" class="btn" target="_blank">Buy Now</a>
+      <a href="deeplearning.html" class="btn">Learn More</a>
     </div>
 
     <!-- SQL -->
     <div class="card">
       <img src="images/sql.jpg" alt="SQL">
-      <h3>SQL for Data Engineering</h3>
+      <h3>SQL for Data Engineering & Analytics</h3>
+      <p><b>Duration:</b> 4 Weeks</p>
       <ul>
-        <li>SQL Fundamentals, Joins, Subqueries</li>
-        <li>Window Functions</li>
-        <li>Query Optimization & Indexing</li>
-        <li>ETL & Data Warehousing</li>
+        <li>SQL Fundamentals</li>
+        <li>Filtering, Sorting & Aggregations</li>
+        <li>Joins & Subqueries</li>
+        <li>Window Functions & Indexes</li>
+        <li>Stored Procedures & Views</li>
+        <li>SQL for ETL & Data Warehouses</li>
         <li>Hands-on Projects</li>
       </ul>
       <p class="price">£199</p>
-      <a href="sql.html" class="btn">View Course</a>
       <a href="https://buy.stripe.com/test_8x24gtedu0Op59QdYsgnK00" class="btn" target="_blank">Buy Now</a>
+      <a href="sql.html" class="btn">Learn More</a>
     </div>
 
     <!-- Python -->
     <div class="card">
       <img src="images/python.jpg" alt="Python">
-      <h3>Python for Data & AI</h3>
+      <h3>Python for Data Science & AI</h3>
+      <p><b>Duration:</b> 6 Weeks</p>
       <ul>
-        <li>Python Basics & Advanced Concepts</li>
-        <li>Data Analysis with Pandas & Numpy</li>
-        <li>Visualization (Matplotlib, Seaborn)</li>
-        <li>OOP & Functional Programming</li>
+        <li>Python Basics</li>
+        <li>Data Structures & OOP</li>
+        <li>Pandas & NumPy</li>
+        <li>Matplotlib & Seaborn</li>
+        <li>Python for ML & AI</li>
         <li>Hands-on Projects</li>
       </ul>
       <p class="price">£299</p>
-      <a href="python.html" class="btn">View Course</a>
       <a href="#" class="btn">Buy Now</a>
+      <a href="python.html" class="btn">Learn More</a>
     </div>
 
     <!-- Tableau / Power BI -->
     <div class="card">
-      <img src="images/tableau.jpg" alt="Tableau/Power BI">
-      <h3>Tableau / Power BI</h3>
+      <img src="images/tableau.jpg" alt="Tableau / Power BI">
+      <h3>Tableau & Power BI Certification</h3>
+      <p><b>Duration:</b> 4 Weeks</p>
       <ul>
-        <li>Data Visualization Fundamentals</li>
-        <li>Dashboards & Interactive Reports</li>
-        <li>Data Prep & Analysis</li>
-        <li>Storytelling with Data</li>
-        <li>Hands-on Case Studies</li>
+        <li>Data Visualization Basics</li>
+        <li>Charts, Dashboards & Stories</li>
+        <li>Power BI Desktop & Tableau Desktop</li>
+        <li>Interactive Visuals</li>
+        <li>Hands-on Projects</li>
       </ul>
-      <p class="price">£249</p>
-      <a href="tableau.html" class="btn">View Course</a>
+      <p class="price">£199</p>
       <a href="#" class="btn">Buy Now</a>
+      <a href="tableau.html" class="btn">Learn More</a>
     </div>
 
     <!-- Kafka & Streaming -->
     <div class="card">
       <img src="images/kafka.jpg" alt="Kafka & Streaming">
-      <h3>Kafka & Streaming</h3>
+      <h3>Kafka & Real-time Streaming</h3>
+      <p><b>Duration:</b> 3 Weeks</p>
       <ul>
-        <li>Kafka Architecture & Basics</li>
+        <li>Kafka Basics & Architecture</li>
         <li>Producers & Consumers</li>
-        <li>Stream Processing with Kafka Streams</li>
-        <li>Integration with Big Data Stack</li>
+        <li>Stream Processing</li>
+        <li>Kafka Connect & Kafka Streams</li>
         <li>Hands-on Projects</li>
       </ul>
-      <p class="price">£299</p>
-      <a href="kafka.html" class="btn">View Course</a>
+      <p class="price">£249</p>
       <a href="#" class="btn">Buy Now</a>
+      <a href="kafka.html" class="btn">Learn More</a>
     </div>
 
     <!-- DBT & Modern Data Stack -->
     <div class="card">
       <img src="images/dbt.jpg" alt="DBT & Modern Data Stack">
       <h3>DBT & Modern Data Stack</h3>
+      <p><b>Duration:</b> 3 Weeks</p>
       <ul>
-        <li>DBT Fundamentals & Transformations</li>
+        <li>DBT Fundamentals</li>
+        <li>ETL / ELT Pipelines</li>
         <li>Data Warehousing Concepts</li>
-        <li>ETL & ELT Pipelines</li>
-        <li>Snowflake / BigQuery Integration</li>
+        <li>Transformations & Modeling</li>
         <li>Hands-on Projects</li>
       </ul>
-      <p class="price">£299</p>
-      <a href="dbt.html" class="btn">View Course</a>
+      <p class="price">£249</p>
       <a href="#" class="btn">Buy Now</a>
+      <a href="dbt.html" class="btn">Learn More</a>
     </div>
 
   </div>
 </section>
 
-<!-- Enquiry / Enrollment -->
+<!-- Enrollment Form Section -->
 <section id="enroll">
   <h2>Enquiry / Enrollment Form</h2>
-  <p>Submit your details and we’ll contact you for more information or course enrollment.</p>
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfSTNFptCwgcSZ_AhWEJrApfIUed09Yj5pkia24hwBkU4dAAQ/viewform?embedded=true" width="100%" height="1055"></iframe>
+  <p>Not ready to pay yet? Submit your details and we’ll contact you.</p>
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfSTNFptCwgcSZ_AhWEJrApfIUed09Yj5pkia24hwBkU4dAAQ/viewform?embedded=true" width="100%" height="1055" frameborder="0">Loading…</iframe>
 </section>
 
-<!-- Footer -->
 <footer>
-  <p>© 2025 Wited Digital OPC Pvt Ltd | All Rights Reserved</p>
+  <p>© 2025 | Witek Digital OPC Pvt Ltd | All Rights Reserved</p>
 </footer>
 
 </body>
