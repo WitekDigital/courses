@@ -1,48 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>dbt & Modern Data Stack | Witek Digital</title>
-  <meta name="description" content="Learn dbt, analytics engineering, and modern data stack practices.">
+  <meta charset="UTF-8" />
+  <title>dbt & Modern Data Stack | Witek Digital OPC Pvt Ltd</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Learn dbt and modern data stack including Snowflake, BigQuery, analytics engineering, and data modeling. Hands-on projects included.">
+  <meta name="keywords" content="dbt Course, Modern Data Stack, Snowflake, BigQuery, Analytics Engineering, Data Modeling">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header class="main-header">
   <div class="header-container">
-    <div class="logo"><a href="index.html">Witek Digital OPC Pvt Ltd</a></div>
+    <div class="logo">Witek Digital OPC Pvt Ltd</div>
     <nav>
-      <a href="index.html#courses">Courses</a>
-      <a href="index.html#corporate">Corporate</a>
-      <a href="index.html#faq">FAQs</a>
+      <a href="index.html">Home</a>
+      <a href="#syllabus">Curriculum</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQs</a>
+      <a href="#enroll">Enroll</a>
     </nav>
+  </div>
+
+  <div class="hero">
+    <h1>dbt & Modern Data Stack</h1>
+    <p class="hero-sub">Master analytics engineering, Snowflake & BigQuery, and modern data workflows with dbt.</p>
   </div>
 </header>
 
-<section class="section">
-  <h1>dbt & Modern Data Stack</h1>
-  <p class="hero-sub">Analytics engineering | Best practices</p>
-  <img src="images/dbt.webp" alt="dbt Course" loading="lazy">
-</section>
-
-<section class="section">
-  <h2>What You Will Learn</h2>
-  <ul>
-    <li>dbt Models & Testing</li>
-    <li>Data Transformations</li>
-    <li>CI/CD for Analytics</li>
-    <li>Modern Data Stack Architecture</li>
-    <li>Production-ready Projects</li>
+<section id="syllabus" class="section">
+  <h2>Course Curriculum</h2>
+  <ul class="syllabus-list">
+    <li>Introduction to Modern Data Stack</li>
+    <li>Data Warehousing Concepts</li>
+    <li>Introduction to dbt (Data Build Tool)</li>
+    <li>dbt Projects, Models, and Sources</li>
+    <li>dbt Transformations & Materializations</li>
+    <li>Version Control & CI/CD with dbt</li>
+    <li>Data Testing & Documentation in dbt</li>
+    <li>Snowflake: Warehouse Setup & Best Practices</li>
+    <li>BigQuery: Analytics & Data Modeling</li>
+    <li>Project: Build a Complete dbt Pipeline</li>
   </ul>
 </section>
 
-<section class="section">
-  <h2>Pricing</h2>
-  <p class="price">£229</p>
-  <a href="https://buy.stripe.com/REPLACE_DBT" class="btn-primary" target="_blank">Buy Now</a>
+<section id="pricing" class="section">
+  <h2>Course Pricing</h2>
+  <div class="course-grid">
+    <div class="course-card">
+      <img src="images/dbt.jpg" alt="dbt & Modern Data Stack Course" loading="lazy">
+      <h3>dbt & Modern Data Stack</h3>
+      <p><b>Duration:</b> 4 Weeks</p>
+      <p class="price">£199</p>
+      <a href="https://buy.stripe.com/test_placeholder" target="_blank" class="btn-primary">Buy Now</a>
+      <a href="#enroll" class="btn-outline">Enquiry / Enrollment</a>
+    </div>
+  </div>
 </section>
 
-<footer>© 2025 Witek Digital OPC Pvt Ltd</footer>
+<section id="faq" class="faq section">
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq-item">
+    <button class="faq-question">Do you provide certification?</button>
+    <div class="faq-answer">Yes, all courses come with a certificate of completion.</div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-question">Is the course live or self-paced?</button>
+    <div class="faq-answer">We offer a mix of live instructor-led and self-paced sessions.</div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-question">Do you provide corporate training?</button>
+    <div class="faq-answer">Yes, customized corporate training with bundle pricing is available.</div>
+  </div>
+</section>
+
+<section id="enroll" class="section">
+  <h2>Enquiry / Enrollment</h2>
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfSTNFptCwgcSZ_AhWEJrApfIUed09Yj5pkia24hwBkU4dAAQ/viewform?embedded=true" loading="lazy"></iframe>
+</section>
+
+<footer>
+  <p>© 2025 Witek Digital OPC Pvt Ltd | All Rights Reserved</p>
+</footer>
+
+<script>
+  document.querySelectorAll(".faq-question").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const ans = btn.nextElementSibling;
+      ans.style.display = ans.style.display === "block" ? "none" : "block";
+    });
+  });
+</script>
+
 </body>
 </html>
