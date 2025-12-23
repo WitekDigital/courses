@@ -1,159 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI & Data Courses | Deep Learning & SQL</title>
-  <script src="https://js.stripe.com/v3/"></script>
+  <meta charset="UTF-8" />
+  <title>Professional Courses | Deep Learning & SQL</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
   <style>
-    body { font-family: Arial, sans-serif; margin:0; background: #f8f9fa; }
-    header { background: #111827; color: white; padding: 25px; text-align: center; }
-    header h1 { margin: 0; font-size: 2rem; }
-    section { max-width: 1000px; margin: auto; padding: 40px 20px; }
-    h2 { color: #111827; margin-top: 40px; }
-    .course-card { background: white; padding: 25px; border-radius: 10px; margin-bottom: 30px; box-shadow: 0 10px 20px rgba(0,0,0,0.08); }
-    table { width: 100%; border-collapse: collapse; margin-top: 15px; }
-    table, th, td { border: 1px solid #ddd; }
-    th, td { padding: 10px; text-align: left; }
-    th { background-color: #2563eb; color: white; }
-    button { background: #2563eb; color: white; border: none; padding: 12px 18px; border-radius: 6px; cursor: pointer; font-size: 16px; margin-top: 10px; }
-    button:hover { background: #1d4ed8; }
-    form { background: white; padding: 25px; border-radius: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.08); margin-top: 40px; }
-    form input, form textarea { width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc; }
-    footer { background: #111827; color: #9ca3af; text-align: center; padding: 20px; margin-top: 40px; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #0a2540;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .courses {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 8px;
+      padding: 25px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      color: #0a2540;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #635bff;
+      color: white;
+      padding: 12px 18px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+
+    .btn:hover {
+      background: #4b44d6;
+    }
+
+    .price {
+      font-size: 22px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    iframe {
+      width: 100%;
+      border: none;
+    }
+
+    footer {
+      background: #0a2540;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
   </style>
 </head>
+
 <body>
 
 <header>
-  <h1>Deep Learning & SQL Courses</h1>
-  <p>Learn industry-ready AI & Data skills</p>
+  <h1>Industry-Ready Professional Courses</h1>
+  <p>Learn from real-world curriculum | Hands-on | Certification</p>
 </header>
 
 <section>
+  <h2>Our Courses</h2>
 
-  <!-- Deep Learning Course Card -->
-  <div class="course-card">
-    <h2>Deep Learning Course</h2>
-    <p>Neural Networks, CNNs, RNNs, Optimization, TensorFlow & Keras.</p>
-    <p><strong>Price:</strong> £199</p>
-    <button onclick="pay('dl')">Enroll Now</button>
+  <div class="courses">
 
-    <!-- Deep Learning Curriculum Table -->
-    <h3>Course Curriculum</h3>
-    <table>
-      <thead>
-        <tr>
-          <th>Lesson No</th>
-          <th>Lesson Name</th>
-          <th>Topics</th>
-          <th>Hours</th>
-          <th>Day</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td>1</td><td>Course Introduction</td><td>Learning Path, Program Components</td><td>4</td><td>1</td></tr>
-        <tr><td>2</td><td>Introduction to Deep Learning</td><td>History of AI, Motivation, DL vs ML, Applications, Frameworks, Key Takeaways</td><td>4</td><td>2</td></tr>
-        <tr><td>3</td><td>Artificial Neural Networks</td><td>Neurons, Perceptron, Forward/Back Propagation, Gradient Descent, Activation Functions, Key Takeaways</td><td>4</td><td>2</td></tr>
-        <tr><td>4</td><td>Deep Neural Networks</td><td>Forward/Backward Propagation, Loss Function, Regularization, MNIST Project, Key Takeaways</td><td>4</td><td>3</td></tr>
-        <tr><td>5</td><td>TensorFlow</td><td>Introduction, Installation, Tensors, Sequential & Functional API, Keras, Hands-on Projects</td><td>4</td><td>3</td></tr>
-        <tr><td>6</td><td>PyTorch</td><td>Introduction, Installation, Modules, Fashion-MNIST Project, Key Takeaways</td><td>4</td><td>4</td></tr>
-        <tr><td>7</td><td>Model Optimization & Performance</td><td>SGD, Momentum, AdaGrad, RMSProp, Adam, Batch Norm, Regularization, Dropout, Hyperparameter Tuning</td><td>4</td><td>5</td></tr>
-        <tr><td>8</td><td>Convolutional Neural Networks</td><td>Image Data, CNN Architecture, ResNet, TensorBoard, CIFAR10 Project</td><td>4</td><td>6</td></tr>
-        <tr><td>9</td><td>Transfer Learning</td><td>Pretrained Models, Advantages, Implementation, Key Takeaways</td><td>4</td><td>7</td></tr>
-        <tr><td>10</td><td>Object Detection</td><td>Techniques, YOLO v3 Overview, TF Lite, Projects, Key Takeaways</td><td>4</td><td>8</td></tr>
-        <tr><td>11</td><td>Recurrent Neural Networks (RNN)</td><td>Sequential Modeling, LSTM, GRU, Hybrid Models, Video Classification, Key Takeaways</td><td>4</td><td>9</td></tr>
-        <tr><td>12</td><td>Transformer Models for NLP</td><td>Transformer Architecture, BERT, Language Translation, Key Takeaways</td><td>4</td><td>10</td></tr>
-        <tr><td>13</td><td>Autoencoders</td><td>Unsupervised DL, Hyperparameters, Fashion-MNIST Project, Key Takeaways</td><td>4</td><td>10</td></tr>
-      </tbody>
-    </table>
+    <!-- Deep Learning Course -->
+    <div class="card">
+      <h3>Deep Learning Certification Program</h3>
+      <p><b>Duration:</b> 10 Weeks</p>
+
+      <ul>
+        <li>Neural Networks & Perceptron</li>
+        <li>Deep Neural Networks</li>
+        <li>TensorFlow & Keras</li>
+        <li>PyTorch</li>
+        <li>Model Optimization (SGD, Adam, RMSProp)</li>
+        <li>Convolutional Neural Networks (CNN)</li>
+        <li>Transfer Learning</li>
+        <li>Object Detection (YOLO)</li>
+        <li>RNN, LSTM, GRU</li>
+        <li>Transformers & BERT</li>
+        <li>Autoencoders</li>
+        <li>Capstone Projects (MNIST, CIFAR-10)</li>
+      </ul>
+
+      <p class="price">£499</p>
+
+      <!-- 🔴 REPLACE WITH YOUR STRIPE PAYMENT LINK -->
+      <a href="https://buy.stripe.com/REPLACE_DEEP_LEARNING_LINK"
+         target="_blank"
+         class="btn">
+        Buy Now
+      </a>
+    </div>
+
+    <!-- SQL Course -->
+    <div class="card">
+      <h3>SQL for Data Engineering & Analytics</h3>
+      <p><b>Duration:</b> 4 Weeks</p>
+
+      <ul>
+        <li>SQL Fundamentals</li>
+        <li>Filtering, Sorting & Aggregations</li>
+        <li>Joins & Subqueries</li>
+        <li>Window Functions</li>
+        <li>Indexes & Query Optimization</li>
+        <li>Stored Procedures & Views</li>
+        <li>SQL for ETL Pipelines</li>
+        <li>SQL for Data Warehouses</li>
+        <li>Hands-on Projects</li>
+      </ul>
+
+      <p class="price">£199</p>
+
+      <!-- 🔴 REPLACE WITH YOUR STRIPE PAYMENT LINK -->
+      <a href="https://buy.stripe.com/REPLACE_SQL_LINK"
+         target="_blank"
+         class="btn">
+        Buy Now
+      </a>
+    </div>
+
   </div>
+</section>
 
-  <!-- SQL Course Card -->
-  <div class="course-card">
-    <h2>SQL for Data Engineering</h2>
-    <p>Learn SQL from basics to advanced queries for Data Engineering and Analytics.</p>
-    <p><strong>Price:</strong> £99</p>
-    <button onclick="pay('sql')">Enroll Now</button>
+<section id="enroll">
+  <h2>Enquiry / Enrollment Form</h2>
+  <p>Not ready to pay yet? Submit your details and we’ll contact you.</p>
 
-    <!-- SQL Course Curriculum Table -->
-    <h3>Course Curriculum</h3>
-    <table>
-      <thead>
-        <tr>
-          <th>Lesson No</th>
-          <th>Lesson Name</th>
-          <th>Topics</th>
-          <th>Hours</th>
-          <th>Day</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td>1</td><td>SQL Fundamentals</td><td>Introduction to Databases, RDBMS Concepts, SELECT, WHERE, ORDER BY</td><td>4</td><td>1</td></tr>
-        <tr><td>2</td><td>Advanced Queries</td><td>GROUP BY, HAVING, Aggregate Functions, DISTINCT, CASE Statements</td><td>4</td><td>2</td></tr>
-        <tr><td>3</td><td>Joins & Subqueries</td><td>INNER, LEFT, RIGHT, FULL JOIN, CROSS JOIN, Self Join, Subqueries</td><td>4</td><td>3</td></tr>
-        <tr><td>4</td><td>Data Manipulation</td><td>INSERT, UPDATE, DELETE, Transactions, COMMIT, ROLLBACK</td><td>4</td><td>4</td></tr>
-        <tr><td>5</td><td>Window Functions</td><td>ROW_NUMBER, RANK, DENSE_RANK, LEAD/LAG, PARTITION BY, Running Totals</td><td>4</td><td>5</td></tr>
-        <tr><td>6</td><td>Views & Indexes</td><td>Creating Views, Materialized Views, Indexes, Performance</td><td>4</td><td>6</td></tr>
-        <tr><td>7</td><td>Stored Procedures & Functions</td><td>Creating Stored Procedures, Functions, Parameters, Control Flow</td><td>4</td><td>7</td></tr>
-        <tr><td>8</td><td>SQL Optimization</td><td>Query Optimization, EXPLAIN PLAN, Index Usage, Best Practices</td><td>4</td><td>8</td></tr>
-        <tr><td>9</td><td>NoSQL Overview</td><td>Key-Value Stores, Document Databases, When to Use NoSQL</td><td>2</td><td>9</td></tr>
-        <tr><td>10</td><td>Project</td><td>Mini Data Warehouse / Analytics Queries Project</td><td>4</td><td>10</td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <!-- Enquiry / Enrollment Form -->
-  <h2>Enquiry & Enrollment Form</h2>
-  <form id="enquiryForm">
-    <input type="text" id="name" placeholder="Your Name" required>
-    <input type="email" id="email" placeholder="Your Email" required>
-    <textarea id="message" placeholder="Your message or course inquiry" rows="5" required></textarea>
-    <button type="submit">Submit Enquiry</button>
-  </form>
-
+  <!-- Google Form Embed -->
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfSTNFptCwgcSZ_AhWEJrApfIUed09Yj5pkia24hwBkU4dAAQ/viewform?embedded=true" width="640" height="1055" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 </section>
 
 <footer>
-  <p>© 2025 Akshay Chauhan | Online Training</p>
+  <p>© 2025 | Akshay Chauhan | All Rights Reserved</p>
 </footer>
-
-<script>
-// Stripe Checkout via Cloudflare Worker
-function pay(course) {
-  const priceMap = {
-    dl: "price_1Sh5kC6A27QpyxAOw3sBeowK", // replace with your Stripe price IDs
-    sql: "price_1Sh5kb6A27QpyxAOFy4roeWf"
-  };
-
-  fetch("https://course.akshaychauhan-jss.workers.dev/", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ priceId: priceMap[course] })
-  })
-  .then(res => res.json())
-  .then(data => {
-    if (data.url) {
-      window.location.href = data.url;
-    } else {
-      alert("Error: " + (data.error || "Unknown error"));
-    }
-  })
-  .catch(err => alert("Error connecting to payment service: " + err));
-}
-
-// Enquiry form handler
-document.getElementById('enquiryForm').addEventListener('submit', function(e) {
-  e.preventDefault();
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  const message = document.getElementById('message').value;
-
-  alert(`Thank you ${name}! Your enquiry has been submitted.\nWe will contact you at ${email}.`);
-  // TODO: connect to backend/email service to store enquiries
-  this.reset();
-});
-</script>
 
 </body>
 </html>
