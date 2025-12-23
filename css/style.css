@@ -27,14 +27,18 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
   color: white;
+  line-height: 1;         
+  display: flex;
+  align-items: center;
 }
+
 
 nav a {
   color: white;
@@ -249,14 +253,15 @@ footer {
   .course-card img {
     height: 150px;
   }
-  /* ===== PROMO FLYING BANNER ===== */
+
+}
 /* ===============================
-   PROMO FLYING BANNER (PREMIUM)
+   PROMO FLYING BANNER (GLOBAL)
 ================================ */
 
 .promo-banner {
   position: sticky;
-  top: 70px; /* stays below header */
+  top: 70px;
   z-index: 999;
   width: 100%;
   background: linear-gradient(90deg, #635bff, #4b44d6);
@@ -264,33 +269,21 @@ footer {
   padding: 8px 0;
 }
 
-/* animation track */
 .promo-track {
   display: flex;
   width: max-content;
   animation: slide-right 22s linear infinite;
 }
 
-/* pause on hover */
 .promo-banner:hover .promo-track {
   animation-play-state: paused;
 }
 
-/* text styling */
 .promo-track span {
   white-space: nowrap;
   padding-right: 80px;
   font-size: 14px;
   color: #ffffff;
-}
-
-.promo-track strong {
-  font-weight: 700;
-}
-
-.promo-track em {
-  font-style: normal;
-  opacity: 0.9;
 }
 
 .promo-track .coupon {
@@ -299,20 +292,15 @@ footer {
   padding: 3px 8px;
   border-radius: 4px;
   font-weight: bold;
-  margin: 0 4px;
 }
 
 /* animation */
 @keyframes slide-right {
-  from {
-    transform: translateX(-50%);
-  }
-  to {
-    transform: translateX(0%);
-  }
+  from { transform: translateX(-50%); }
+  to   { transform: translateX(0%); }
 }
 
-/* mobile optimization */
+/* mobile-only tweak */
 @media (max-width: 768px) {
   .promo-track span {
     font-size: 13px;
@@ -323,6 +311,7 @@ footer {
 
 
 }
+
 
 
 
