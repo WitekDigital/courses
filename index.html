@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Professional Courses | Deep Learning & SQL</title>
+  <title>Professional Tech Courses | AI, Data & Cloud</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
   <style>
@@ -15,75 +15,102 @@
     }
 
     header {
-      background: #0a2540;
+      background: linear-gradient(135deg, #0a2540, #102a44);
       color: white;
-      padding: 40px 20px;
+      padding: 60px 20px;
       text-align: center;
     }
 
     header h1 {
+      font-size: 36px;
       margin-bottom: 10px;
     }
 
+    header p {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
     section {
-      padding: 40px 20px;
-      max-width: 1100px;
+      padding: 50px 20px;
+      max-width: 1200px;
       margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #0a2540;
     }
 
     .courses {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 25px;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
     }
 
     .card {
       background: white;
-      border-radius: 8px;
-      padding: 25px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     .card h3 {
       color: #0a2540;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 15px;
     }
 
     ul {
-      padding-left: 20px;
-    }
-
-    .btn {
-      display: inline-block;
-      background: #635bff;
-      color: white;
-      padding: 12px 18px;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-      margin-top: 15px;
-    }
-
-    .btn:hover {
-      background: #4b44d6;
+      padding-left: 18px;
+      font-size: 14px;
     }
 
     .price {
       font-size: 22px;
       font-weight: bold;
-      margin-top: 10px;
+      margin: 15px 0;
     }
 
-    iframe {
-      width: 100%;
-      border: none;
+    .actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      background: #635bff;
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .btn.secondary {
+      background: #e5e7eb;
+      color: #111827;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
     }
 
     footer {
       background: #0a2540;
       color: white;
       text-align: center;
-      padding: 20px;
+      padding: 25px;
       margin-top: 40px;
+      font-size: 14px;
     }
   </style>
 </head>
@@ -91,85 +118,78 @@
 <body>
 
 <header>
-  <h1>Industry-Ready Professional Courses</h1>
-  <p>Learn from real-world curriculum | Hands-on | Certification</p>
+  <h1>Industry-Ready Tech Certification Programs</h1>
+  <p>AI • Data Engineering • Analytics • Cloud • Hands-on Learning</p>
 </header>
 
 <section>
-  <h2>Our Courses</h2>
+  <h2>Featured Courses</h2>
 
   <div class="courses">
 
-    <!-- Deep Learning Course -->
+    <!-- Deep Learning -->
     <div class="card">
-      <h3>Deep Learning Certification Program</h3>
-      <p><b>Duration:</b> 10 Weeks</p>
+      <h3>Deep Learning Certification</h3>
+      <p>Master neural networks, CNNs, RNNs, Transformers & real-world projects.</p>
 
       <ul>
-        <li>Neural Networks & Perceptron</li>
-        <li>Deep Neural Networks</li>
-        <li>TensorFlow & Keras</li>
-        <li>PyTorch</li>
-        <li>Model Optimization (SGD, Adam, RMSProp)</li>
-        <li>Convolutional Neural Networks (CNN)</li>
-        <li>Transfer Learning</li>
-        <li>Object Detection (YOLO)</li>
-        <li>RNN, LSTM, GRU</li>
-        <li>Transformers & BERT</li>
-        <li>Autoencoders</li>
-        <li>Capstone Projects (MNIST, CIFAR-10)</li>
+        <li>TensorFlow, Keras & PyTorch</li>
+        <li>Computer Vision & NLP</li>
+        <li>Capstone projects</li>
       </ul>
 
-      <p class="price">£499</p>
+      <div class="price">£499</div>
 
-      <!-- 🔴 REPLACE WITH YOUR STRIPE PAYMENT LINK -->
-      <a href="https://buy.stripe.com/test_7sY00d9XeaoZbyecUognK01"
-         target="_blank"
-         class="btn">
-        Buy Now
-      </a>
+      <div class="actions">
+        <a href="deep-learning.html" class="btn secondary">View Curriculum</a>
+        <a href="https://buy.stripe.com/test_7sY00d9XeaoZbyecUognK01" target="_blank" class="btn">Buy Now</a>
+      </div>
     </div>
 
-    <!-- SQL Course -->
+    <!-- SQL -->
     <div class="card">
-      <h3>SQL for Data Engineering & Analytics</h3>
-      <p><b>Duration:</b> 4 Weeks</p>
+      <h3>SQL for Data Engineering</h3>
+      <p>Learn production-grade SQL for analytics, ETL & warehouses.</p>
 
       <ul>
-        <li>SQL Fundamentals</li>
-        <li>Filtering, Sorting & Aggregations</li>
-        <li>Joins & Subqueries</li>
-        <li>Window Functions</li>
-        <li>Indexes & Query Optimization</li>
-        <li>Stored Procedures & Views</li>
-        <li>SQL for ETL Pipelines</li>
-        <li>SQL for Data Warehouses</li>
-        <li>Hands-on Projects</li>
+        <li>Advanced joins & windows</li>
+        <li>Query optimization</li>
+        <li>Hands-on projects</li>
       </ul>
 
-      <p class="price">£199</p>
+      <div class="price">£199</div>
 
-      <!-- 🔴 REPLACE WITH YOUR STRIPE PAYMENT LINK -->
-      <a href="https://buy.stripe.com/test_8x24gtedu0Op59QdYsgnK00"
-         target="_blank"
-         class="btn">
-        Buy Now
-      </a>
+      <div class="actions">
+        <a href="sql.html" class="btn secondary">View Curriculum</a>
+        <a href="https://buy.stripe.com/test_8x24gtedu0Op59QdYsgnK00" target="_blank" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Coming Soon -->
+    <div class="card">
+      <h3>More Courses Coming Soon</h3>
+      <ul>
+        <li>Python for Data Engineering</li>
+        <li>Tableau & Power BI</li>
+        <li>Kafka & Streaming</li>
+        <li>dbt & Modern Data Stack</li>
+      </ul>
+
+      <p><b>Launching soon</b></p>
     </div>
 
   </div>
 </section>
 
-<section id="enroll">
-  <h2>Enquiry / Enrollment Form</h2>
-  <p>Not ready to pay yet? Submit your details and we’ll contact you.</p>
+<section>
+  <h2>Enquiry / Enrollment</h2>
+  <p style="text-align:center;">Not ready to enroll? Submit your details and we’ll contact you.</p>
 
-  <!-- Google Form Embed -->
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfSTNFptCwgcSZ_AhWEJrApfIUed09Yj5pkia24hwBkU4dAAQ/viewform?embedded=true" width="640" height="1055" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfSTNFptCwgcSZ_AhWEJrApfIUed09Yj5pkia24hwBkU4dAAQ/viewform?embedded=true" height="1050"></iframe>
 </section>
 
 <footer>
-  <p>© 2025 | Akshay Chauhan | All Rights Reserved</p>
+  © 2025 Akshay Chauhan · Professional Online Training
 </footer>
 
 </body>
