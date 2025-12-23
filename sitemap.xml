@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
-
+<url>
+  <loc>https://witekdigital.github.io/courses/about.html</loc>
+</url>
   <url>
     <loc>https://witekdigital.github.io/courses/</loc>
     <priority>1.0</priority>
