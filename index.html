@@ -2,181 +2,165 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Witek Digital OPC Pvt Ltd | Professional Courses</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="https://js.stripe.com/v3/"></script>
+  <title>Professional IT Courses | Witek Digital OPC Pvt Ltd</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Industry-aligned professional courses in Deep Learning, SQL, Python, Kafka, Tableau, dbt & Modern Data Stack. Corporate and student discounts available.">
+  <meta name="keywords" content="Deep Learning Course, SQL Training, Python, Kafka, Tableau, dbt, Corporate Training">
+  <meta name="author" content="Witek Digital OPC Pvt Ltd">
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-  <div class="header-left">Witek Digital OPC Pvt Ltd</div>
-  <nav>
-    <a href="#courses">Courses</a>
-    <a href="#enroll">Enrollment</a>
-    <a href="#faq">FAQ</a>
-  </nav>
+<!-- ===== HEADER ===== -->
+<header class="main-header">
+  <div class="header-container">
+    <div class="logo">Witek Digital OPC Pvt Ltd</div>
+
+    <nav>
+      <a href="#courses">Courses</a>
+      <a href="#corporate">Corporate</a>
+      <a href="#faq">FAQs</a>
+      <a href="#enroll">Enroll</a>
+    </nav>
+  </div>
+
+  <div class="hero">
+    <h1>Learn from Industry Leaders & PhDs from Premier Institutes</h1>
+    <p class="hero-sub">
+      Real-world curriculum • Special student discounts • Corporate bundle packages
+    </p>
+  </div>
 </header>
 
-<section class="hero">
-  <div class="hero-overlay"></div>
-  <div class="hero-text">
-    <h1>Learn from Industry Leaders & PhDs from Premier Institutes</h1>
-    <p>Special discounts for students. Bundle packages for corporate training. Real-world curriculum.</p>
-    <a href="#courses" class="btn">Explore Courses</a>
-  </div>
-</section>
+<!-- ===== COURSES ===== -->
+<section id="courses" class="section">
+  <h2>Popular Programs</h2>
 
-<section id="courses">
-  <h2>Our Courses</h2>
-  <div class="courses-grid">
+  <div class="course-grid">
 
-    <!-- Deep Learning -->
-    <div class="card">
-      <img src="images/deeplearning.jpg" alt="Deep Learning">
-      <h3>Deep Learning Certification Program</h3>
-      <p><b>Duration:</b> 10 Weeks</p>
-      <ul>
-        <li>Neural Networks & Perceptron</li>
-        <li>Deep Neural Networks</li>
-        <li>TensorFlow & Keras</li>
-        <li>PyTorch</li>
-        <li>Model Optimization (SGD, Adam, RMSProp)</li>
-        <li>Convolutional Neural Networks (CNN)</li>
-        <li>Transfer Learning</li>
-        <li>Object Detection (YOLO)</li>
-        <li>RNN, LSTM, GRU</li>
-        <li>Transformers & BERT</li>
-        <li>Autoencoders</li>
-        <li>Capstone Projects (MNIST, CIFAR-10)</li>
-      </ul>
-      <p class="price">£499</p>
-      <a href="https://buy.stripe.com/test_7sY00d9XeaoZbyecUognK01" class="btn" target="_blank">Buy Now</a>
-      <a href="deeplearning.html" class="btn-outline">Learn More</a>
+    <div class="course-card">
+      <img src="images/deeplearning.webp" alt="Deep Learning Course" loading="lazy">
+      <h3>Deep Learning Certification</h3>
+      <p>Neural Networks, CNNs, RNNs, Transformers & real projects.</p>
+      <a href="deep-learning.html" class="btn-outline">View Curriculum</a>
     </div>
 
-    <!-- SQL -->
-    <div class="card">
-      <img src="images/sql.jpg" alt="SQL">
-      <h3>SQL for Data Engineering & Analytics</h3>
-      <p><b>Duration:</b> 4 Weeks</p>
-      <ul>
-        <li>SQL Fundamentals</li>
-        <li>Filtering, Sorting & Aggregations</li>
-        <li>Joins & Subqueries</li>
-        <li>Window Functions</li>
-        <li>Indexes & Query Optimization</li>
-        <li>Stored Procedures & Views</li>
-        <li>SQL for ETL Pipelines</li>
-        <li>SQL for Data Warehouses</li>
-        <li>Hands-on Projects</li>
-      </ul>
-      <p class="price">£199</p>
-      <a href="https://buy.stripe.com/test_8x24gtedu0Op59QdYsgnK00" class="btn" target="_blank">Buy Now</a>
-      <a href="sql.html" class="btn-outline">Learn More</a>
+    <div class="course-card">
+      <img src="images/sql.webp" alt="SQL Course" loading="lazy">
+      <h3>SQL for Data Engineering</h3>
+      <p>Advanced SQL, optimization, ETL & analytics.</p>
+      <a href="sql.html" class="btn-outline">View Curriculum</a>
     </div>
 
-    <!-- Python -->
-    <div class="card">
-      <img src="images/python.jpg" alt="Python">
-      <h3>Python for Data Engineering & AI</h3>
-      <p><b>Duration:</b> 6 Weeks</p>
-      <ul>
-        <li>Python Basics & OOP</li>
-        <li>Data Structures & Algorithms</li>
-        <li>Pandas, NumPy & Matplotlib</li>
-        <li>Data Analysis & Visualization</li>
-        <li>Hands-on Projects</li>
-      </ul>
-      <p class="price">£299</p>
-      <a href="#" class="btn">Buy Now</a>
-      <a href="python.html" class="btn-outline">Learn More</a>
+    <div class="course-card">
+      <img src="images/python.webp" alt="Python Course" loading="lazy">
+      <h3>Python for Data & Backend</h3>
+      <p>Python fundamentals, automation, APIs & data.</p>
+      <a href="python.html" class="btn-outline">View Curriculum</a>
     </div>
 
-    <!-- Tableau -->
-    <div class="card">
-      <img src="images/tableau.jpg" alt="Tableau">
-      <h3>Tableau & Power BI Analytics</h3>
-      <p><b>Duration:</b> 4 Weeks</p>
-      <ul>
-        <li>Data Visualization Fundamentals</li>
-        <li>Dashboards & Storytelling</li>
-        <li>Tableau Desktop & Power BI</li>
-        <li>Real-World Business Cases</li>
-      </ul>
-      <p class="price">£199</p>
-      <a href="#" class="btn">Buy Now</a>
-      <a href="tableau.html" class="btn-outline">Learn More</a>
+    <div class="course-card">
+      <img src="images/kafka.webp" alt="Kafka Course" loading="lazy">
+      <h3>Kafka & Streaming Systems</h3>
+      <p>Real-time data pipelines & event-driven systems.</p>
+      <a href="kafka.html" class="btn-outline">View Curriculum</a>
     </div>
 
-    <!-- Kafka -->
-    <div class="card">
-      <img src="images/kafka.jpg" alt="Kafka & Streaming">
-      <h3>Kafka & Streaming Platforms</h3>
-      <p><b>Duration:</b> 4 Weeks</p>
-      <ul>
-        <li>Kafka Basics & Architecture</li>
-        <li>Producers, Consumers & Topics</li>
-        <li>Kafka Streams & Connect</li>
-        <li>Real-Time Data Pipelines</li>
-      </ul>
-      <p class="price">£249</p>
-      <a href="#" class="btn">Buy Now</a>
-      <a href="kafka.html" class="btn-outline">Learn More</a>
+    <div class="course-card">
+      <img src="images/tableau.webp" alt="Tableau Course" loading="lazy">
+      <h3>Tableau / Power BI</h3>
+      <p>Data visualization & business dashboards.</p>
+      <a href="tableau.html" class="btn-outline">View Curriculum</a>
     </div>
 
-    <!-- dbt -->
-    <div class="card">
-      <img src="images/dbt.jpg" alt="dbt & Modern Data Stack">
+    <div class="course-card">
+      <img src="images/dbt.webp" alt="dbt Course" loading="lazy">
       <h3>dbt & Modern Data Stack</h3>
-      <p><b>Duration:</b> 3 Weeks</p>
-      <ul>
-        <li>dbt Fundamentals</li>
-        <li>Transformations & Modeling</li>
-        <li>Modern Data Stack Concepts</li>
-        <li>CI/CD & Version Control</li>
-      </ul>
-      <p class="price">£199</p>
-      <a href="#" class="btn">Buy Now</a>
-      <a href="dbt.html" class="btn-outline">Learn More</a>
+      <p>Analytics engineering, Snowflake & BigQuery.</p>
+      <a href="dbt.html" class="btn-outline">View Curriculum</a>
     </div>
 
   </div>
 </section>
 
-<section id="enroll">
-  <h2>Enquiry / Enrollment Form</h2>
-  <p>Not ready to pay yet? Submit your details and we’ll contact you.</p>
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfSTNFptCwgcSZ_AhWEJrApfIUed09Yj5pkia24hwBkU4dAAQ/viewform?embedded=true" width="100%" height="1055" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<!-- ===== CORPORATE CTA ===== -->
+<section id="corporate" class="corporate-cta">
+  <h2>Corporate Training Solutions</h2>
+  <p>Customized training programs for enterprises. Bundle pricing available.</p>
+  <a href="#enroll" class="btn-primary">Contact for Corporate Training</a>
 </section>
 
-<section id="faq" class="faq-section">
+<!-- ===== TESTIMONIALS ===== -->
+<section class="testimonials section">
+  <h2>What Our Learners Say</h2>
+
+  <div class="testimonial-grid">
+    <div class="testimonial-card">
+      <p>“Extremely practical training. Helped me transition into data engineering.”</p>
+      <h4>— Data Engineer, UK</h4>
+    </div>
+
+    <div class="testimonial-card">
+      <p>“Well-structured deep learning program with real-world projects.”</p>
+      <h4>— ML Engineer, India</h4>
+    </div>
+
+    <div class="testimonial-card">
+      <p>“Corporate training was tailored exactly to our tech stack.”</p>
+      <h4>— Engineering Manager</h4>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section id="faq" class="faq section">
   <h2>Frequently Asked Questions</h2>
 
   <div class="faq-item">
-    <h4>Do you provide certification?</h4>
-    <p>Yes, all courses come with a certificate of completion.</p>
+    <button class="faq-question">Do you provide certification?</button>
+    <div class="faq-answer">
+      Yes, all courses come with a certificate of completion.
+    </div>
   </div>
 
   <div class="faq-item">
-    <h4>Are the courses live or self-paced?</h4>
-    <p>We offer a mix of live instructor-led sessions on weekends/weekdays and self-paced content as well.</p>
+    <button class="faq-question">Are the courses live or self-paced?</button>
+    <div class="faq-answer">
+      We offer a mix of live instructor-led and self-paced programs.
+    </div>
   </div>
 
   <div class="faq-item">
-    <h4>Do you provide corporate training?</h4>
-    <p>Yes, we offer bundle packages for corporate teams.</p>
+    <button class="faq-question">Do you provide corporate training?</button>
+    <div class="faq-answer">
+      Yes, customized corporate training with bundle pricing is available.
+    </div>
   </div>
 </section>
 
-<footer class="site-footer">
-  © 2025 Witek Digital OPC Pvt Ltd | All Rights Reserved
+<!-- ===== ENROLL ===== -->
+<section id="enroll" class="section">
+  <h2>Enquiry / Enrollment</h2>
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfSTNFptCwgcSZ_AhWEJrApfIUed09Yj5pkia24hwBkU4dAAQ/viewform?embedded=true" loading="lazy"></iframe>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <p>© 2025 Witek Digital OPC Pvt Ltd | All Rights Reserved</p>
 </footer>
 
-
-<footer class="site-footer">
-  © 2025 Witek Digital OPC Pvt Ltd | All Rights Reserved
-</footer>
+<!-- ===== FAQ SCRIPT ===== -->
+<script>
+  document.querySelectorAll(".faq-question").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const ans = btn.nextElementSibling;
+      ans.style.display = ans.style.display === "block" ? "none" : "block";
+    });
+  });
+</script>
 
 </body>
 </html>
