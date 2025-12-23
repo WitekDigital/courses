@@ -2,78 +2,93 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Python for Data & Backend | Witek Digital</title>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Learn Python for data engineering, automation, APIs, and backend systems.">
-
-  <link rel="stylesheet" href="style.css">
+  <title>Python for Data & Backend | Witek Digital OPC Pvt Ltd</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Python for Data & Backend - Fundamentals, automation, APIs, and data engineering. Industry-aligned.">
+  <meta name="keywords" content="Python, Data Engineering, APIs, Automation, Backend, Data Analytics">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
 <header class="main-header">
   <div class="header-container">
-    <div class="logo">
-      <a href="index.html" style="color:white;">Witek Digital OPC Pvt Ltd</a>
-    </div>
-
+    <div class="logo">Witek Digital OPC Pvt Ltd</div>
     <nav>
-      <a href="index.html#courses">Courses</a>
-      <a href="index.html#corporate">Corporate</a>
-      <a href="index.html#faq">FAQs</a>
-      <a href="index.html#enroll">Enroll</a>
+      <a href="index.html">Home</a>
+      <a href="#syllabus">Curriculum</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQs</a>
+      <a href="#enroll">Enroll</a>
     </nav>
+  </div>
+
+  <div class="hero">
+    <h1>Python for Data & Backend</h1>
+    <p class="hero-sub">Python fundamentals, automation, APIs, data analytics. Live + self-paced. Special student discounts.</p>
   </div>
 </header>
 
-<section class="section">
-  <h1>Python for Data & Backend Development</h1>
-  <p class="hero-sub">Beginner to Advanced | Real-world projects</p>
-
-  <img src="images/python.webp" alt="Python Course" loading="lazy">
-</section>
-
-<section class="section">
-  <h2>Course Overview</h2>
-  <p>
-    Master Python programming with a focus on data engineering,
-    automation, backend development, and analytics.
-  </p>
-</section>
-
-<section class="section">
-  <h2>Curriculum</h2>
-  <ul style="max-width:800px;margin:auto;text-align:left;">
-    <li>Python Basics & Data Types</li>
-    <li>Functions, OOP & Modules</li>
-    <li>Working with Files & APIs</li>
-    <li>Pandas & NumPy</li>
-    <li>Python for ETL Pipelines</li>
-    <li>Automation & Scripting</li>
-    <li>Mini Projects</li>
+<section id="syllabus" class="section">
+  <h2>Course Curriculum</h2>
+  <ul class="syllabus-list">
+    <li>Python Basics: Data types, loops, functions, OOP</li>
+    <li>Data Analysis Libraries: Pandas, NumPy</li>
+    <li>Data Visualization: Matplotlib, Seaborn</li>
+    <li>APIs & Automation: REST API, Web scraping, Cron jobs</li>
+    <li>Backend Basics: Flask, FastAPI, DB connections</li>
+    <li>File handling, JSON, CSV, Excel operations</li>
+    <li>ETL & Data Pipeline Basics</li>
+    <li>Projects: Data cleaning, API integration, simple backend apps</li>
   </ul>
 </section>
 
-<section class="section">
-  <h2>Pricing</h2>
-  <p style="font-size:26px;font-weight:bold;">£199</p>
-
-  <a href="https://buy.stripe.com/test_XXXXXXXX"
-     target="_blank"
-     class="btn-primary">
-    Buy Now
-  </a>
+<section id="pricing" class="section">
+  <h2>Course Pricing</h2>
+  <div class="course-grid">
+    <div class="course-card">
+      <img src="images/python.jpg" alt="Python Course" loading="lazy">
+      <h3>Python for Data & Backend</h3>
+      <p><b>Duration:</b> 6 Weeks</p>
+      <p class="price">£299</p>
+      <a href="https://buy.stripe.com/test_placeholder" target="_blank" class="btn-primary">Buy Now</a>
+      <a href="#enroll" class="btn-outline">Enquiry / Enrollment</a>
+    </div>
+  </div>
 </section>
 
-<section class="section">
-  <h2>Enroll / Enquiry</h2>
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfSTNFptCwgcSZ_AhWEJrApfIUed09Yj5pkia24hwBkU4dAAQ/viewform?embedded=true"></iframe>
+<section id="faq" class="faq section">
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq-item">
+    <button class="faq-question">Do you provide certification?</button>
+    <div class="faq-answer">Yes, all courses come with a certificate of completion.</div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-question">Is the course live or self-paced?</button>
+    <div class="faq-answer">We offer a mix of live instructor-led and self-paced sessions.</div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-question">Do you provide corporate training?</button>
+    <div class="faq-answer">Yes, we offer bundle packages and corporate training programs.</div>
+  </div>
+</section>
+
+<section id="enroll" class="section">
+  <h2>Enquiry / Enrollment</h2>
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfSTNFptCwgcSZ_AhWEJrApfIUed09Yj5pkia24hwBkU4dAAQ/viewform?embedded=true" loading="lazy"></iframe>
 </section>
 
 <footer>
   <p>© 2025 Witek Digital OPC Pvt Ltd | All Rights Reserved</p>
 </footer>
+
+<script>
+  document.querySelectorAll(".faq-question").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const ans = btn.nextElementSibling;
+      ans.style.display = ans.style.display === "block" ? "none" : "block";
+    });
+  });
+</script>
 
 </body>
 </html>
