@@ -308,9 +308,38 @@ footer {
   }
 }
 
-
-
+.enroll-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  margin-top: 30px;
 }
+
+.enroll-form iframe {
+  width: 100%;
+  min-height: 600px;
+  border: none;
+}
+
+.enroll-currency {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .enroll-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .enroll-currency iframe {
+    width: 100%;
+  }
+}
+
+
+
+
+
 
 
 
